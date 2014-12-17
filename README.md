@@ -1,4 +1,4 @@
 brick
 =====
 
-Cleaner wordpress theme
+Basic WordPress theme

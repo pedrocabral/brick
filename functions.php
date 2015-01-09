@@ -3,9 +3,9 @@
  * @package brick
  */
 
-/**
-* Brick Setup
-*/
+/*
+ * Brick Setup
+ */
 if ( ! function_exists( 'brick_setup' ) ) :
 
 function brick_setup() {
@@ -51,7 +51,7 @@ endif; // Brick Setup
 
 add_action( 'after_setup_theme', 'brick_setup' );
 
-/**
+/*
  * Register Sidebar
  */
 function brick_widgets_init() {
@@ -126,7 +126,7 @@ function wpb_first_and_last_menu_class($items) {
 }
 add_filter('wp_nav_menu_objects', 'wpb_first_and_last_menu_class');
 
-/**
+/*
 * fn - debug via browser console - console_echo();
 * usage -> console_echo( $test_variable[, 'test-xxx'] );
 */
@@ -138,6 +138,17 @@ function console_echo( $data, $message = 'WP PHP Debug' ){
 		echo("<script>console.log('" . $message . " : " . $data . "');</script>");
 	}
 }
+
+/*
+ * Title Tag backwards compatibility
+ */
+
+if ( ! function_exists( '_wp_render_title_tag' ) ) :
+	function theme_slug_render_title() { ?>
+<title><?php wp_title( '|', true, 'right' ); ?></title>
+<?php }
+	add_action( 'wp_head', 'theme_slug_render_title' );
+endif;
 
 // end
 ?>

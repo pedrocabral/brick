@@ -5,7 +5,7 @@ A very simple WordPress theme.
 
 Use brick as a starting point for the development of new themes for websites.
 
-Main intentions:
+Main features:
 
 - Output a well-formatted HTML5 code
 - Use a Semantic HTML Structure (HTML5)

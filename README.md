@@ -3,7 +3,7 @@ brick
 
 A very simple WordPress theme.
 
-brick is developed to be used as a starting point for the development of new themes for websites.
+Use brick as a starting point for the development of new themes for websites.
 
 Main intentions:
 

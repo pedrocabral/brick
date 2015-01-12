@@ -78,9 +78,9 @@ $site_styles = array(
 	// Theme Custom CSS (change)
 	get_template_directory_uri() . '/css/brick.css',
 	// Font Awesome Icons
-	get_template_directory_uri() . '/assets/fontawesome/css/font-awesome.min.css',
+	// get_template_directory_uri() . '/assets/fontawesome/css/font-awesome.min.css', // Ex.: Get internal resource
 	// Fonts
-	//'http://fonts.googleapis.com/css?family=Open+Sans'
+	//'http://fonts.googleapis.com/css?family=Open+Sans' // Ex.:  Get external resource
 );
 
 /*

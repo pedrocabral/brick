@@ -113,7 +113,7 @@ require get_template_directory() . '/inc/menu_walker.php';
 add_filter( 'body_class', 'add_body_class' );
 function add_body_class( $classes ){
 	global $post;
-	$classes[] = 'body-'. the_slug(); // custom template tag
+	$classes[] = 'body-'. the_slug(false); // custom template tag
 	return $classes;
 }
 /*

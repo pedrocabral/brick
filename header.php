@@ -23,7 +23,7 @@
 			</nav><!-- #site-navigation -->
 			<div class="search-form">
 				<?php get_search_form();
-			echo "\n\t";?>
-		</div>
+			echo "\n";?>
+			</div>
 		</header><!-- #masthead -->
 		<div id="content" class="site-content"><!-- header.php -->

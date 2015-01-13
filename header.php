@@ -21,5 +21,9 @@
 			<nav id="site-navigation" class="main-navigation" role="navigation">
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => null, 'items_wrap' => '<ul id="%1$s" class="%2$s">'."\n".'%3$s'."\t\t\t\t".'</ul>'."\n" ,'depth' => 5, 'walker' => new menu_walker() ) ); ?>
 			</nav><!-- #site-navigation -->
+			<div class="search-form">
+				<?php get_search_form();
+			echo "\n\t";?>
+		</div>
 		</header><!-- #masthead -->
 		<div id="content" class="site-content"><!-- header.php -->

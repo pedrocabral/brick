@@ -6,8 +6,8 @@
 get_header(); ?>
 
 			<div id="primary" class="content-area"><!-- index.php -->
-				<main id="main" class="site-main" role="main">
-<?php if ( have_posts() ) :
+				<main id="main" class="site-main" role="main"><?php 
+		if ( have_posts() ) :
 	while ( have_posts() ) : the_post();
 			get_template_part( 'content', 'index' );
 		endwhile;

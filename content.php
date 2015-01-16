@@ -2,20 +2,14 @@
 /**
  * @package brick
  */
+?>
 
-get_header(); ?>
-
-			<div id="primary" class="content-area"><!-- index.php -->
-				<main id="main" class="site-main" role="main"><?php 
-		if ( have_posts() ) :
-	while ( have_posts() ) : the_post();
-			get_template_part( 'content', get_post_format() );
-		endwhile;
-			brick_paging_nav();
-		else :
-			get_template_part( 'content', 'none' ); ?>
-<?php endif; ?>
-				</main><!-- #main -->
-			</div><!-- #primary --><!-- index.php -->
-<?php get_sidebar(); ?>
-<?php get_footer(); ?>
+					<article id="post-<?php the_ID(); ?>" class="article-<?php the_slug();?>"><!-- content.php -->
+						<header class="entry-header">
+							<?php the_title( sprintf( '<h1 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' );
+							echo chr(0x0D).chr(0x0A);?>
+						</header><!-- .entry-header -->
+						<div class="entry-content">
+							<?php the_excerpt();?>
+						</div><!-- .entry-content -->
+					</article><!-- #post-## --><!-- content.php -->

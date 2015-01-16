@@ -1,0 +1,35 @@
+/*
+ * Theme Name: brick 
+ * Custom CSS Definitions
+ */
+
+/*
+ * HTML Basic elements definition for development purposes.
+ */
+ 
+body {margin:60px;font-family: 'Verdana', sans-serif; font-size:100%;	line-height: 1.5;}
+h1 {font-size: 2em;}
+h2 {font-size: 1.8em;}
+h3 {font-size: 1.6em;}
+h4 {font-size: 1.4em;}
+h5 {font-size: 1.2em;}
+h6 {font-size: 1em;}
+
+/* Type */
+h1,h2,h3,h4,h5,h6 {clear: both;}
+p {margin-bottom: 1.5em;}
+b,strong {font-weight: bold;}
+dfn,cite,em,i {font-style: italic;}
+
+/* Links */
+a {color: royalblue;}
+a:visited {color: purple;}
+a:hover,a:focus,a:active {color: midnightblue;}
+
+/* WP Elements */
+div{border:1px solid #cccccc; background-color: rgba(190,190,190,.1);}
+#masthead{border: 2px solid #ff0000;}
+#content{border: 2px solid #0000ff;}
+#primary{border: 2px solid #00ff00;}
+#secondary{border: 2px solid #ffff00;}
+#colophon{border: 2px solid #00ffff;}

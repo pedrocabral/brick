@@ -9,7 +9,7 @@ get_header(); ?>
 				<main id="main" class="site-main" role="main"><?php 
 		if ( have_posts() ) :
 	while ( have_posts() ) : the_post();
-			get_template_part( 'content', 'index' );
+			get_template_part( 'content', get_post_format() );
 		endwhile;
 			brick_paging_nav();
 		else :

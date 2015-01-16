@@ -76,7 +76,7 @@ $site_styles = array(
 	// Theme Base CSS (do not change)
 	get_stylesheet_uri(),
 	// Theme Custom CSS (change)
-	get_template_directory_uri() . '/css/brick.css',
+	get_template_directory_uri() . '/css/base.css',
 	// Font Awesome Icons
 	// get_template_directory_uri() . '/assets/fontawesome/css/font-awesome.min.css', // Ex.: Get internal resource
 	// Fonts

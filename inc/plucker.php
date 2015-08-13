@@ -17,6 +17,8 @@ remove_action( 'wp_head', 'adjacent_posts_rel_link', 10, 0 ); // post adjacent
 remove_action( 'wp_head', 'wp_generator' ); // XHTML generator
 remove_action( 'wp_head', 'wp_shortlink_wp_head'); // shortlink
 remove_action( 'wp_head', 'rel_canonical' ); // Canonical
+remove_action( 'wp_head', 'print_emoji_detection_script', 7 ); // emoji
+remove_action( 'wp_print_styles', 'print_emoji_styles' ); // emoji
 
 // Remove comment style
 function remove_recent_comments_style() {

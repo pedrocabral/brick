@@ -1,6 +1,6 @@
 <?php
 /**
- * @package akapulko
+ * @package brick
  */
 ?><!DOCTYPE html><!-- header.php -->
 <html <?php language_attributes(); ?>>

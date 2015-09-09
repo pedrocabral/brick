@@ -9,11 +9,11 @@ class menu_walker extends Walker_Nav_Menu {
 	public $tree_type = array( 'post_type', 'taxonomy', 'custom' );
 	var $db_fields = array( 'parent' => 'menu_item_parent', 'id' => 'db_id' );
 
-	function start_lvl(&$output, $depth) {
+	function start_lvl(&$output, $depth = 0, $args = array()) {
 		$indent = str_repeat("\t", 6 + $depth);
 		$output .= "\n$indent<ul class=\"sub-menu\">\n";
 	}
-	function end_lvl(&$output, $depth) {
+	function end_lvl(&$output, $depth = 0, $args = array()) {
 		$indent = str_repeat("\t",  6 + $depth);
 		$indent1 = str_repeat("\t",  5 + $depth);
 		$output .= "$indent</ul>\n$indent1";
